@@ -1,42 +1,55 @@
-# Automação de Testes - Login E2E
+# 🧪 Automação de Testes - Login (E2E Treinamentos)
 
-Projeto de automação de testes web utilizando Java + Selenium + JUnit 5.
+Projeto de automação de testes web utilizando **Java + Selenium WebDriver + JUnit 5**, com foco em validação de fluxo de login e identificação de bug real.
 
-## Cenário automatizado
+---
 
-Login na plataforma:
+## 🔍 Objetivo
+
+Validar o comportamento do fluxo de autenticação da plataforma:
+
 https://plataforma.dev.e2etreinamentos.com.br/
 
-## Bug encontrado
+---
 
-Durante os testes manuais foi identificado um comportamento inesperado:
+## 🐞 Bug identificado
+
+Durante testes manuais, foi encontrado o seguinte problema:
 
 Ao inserir credenciais válidas:
 
-- o campo senha fica com borda vermelha
-- é necessário clicar duas vezes no botão entrar
+- o campo senha é destacado com borda vermelha
+- o sistema indica erro visual indevido
+- é necessário clicar duas vezes no botão **"Entrar"**
 - somente após o segundo clique o login é realizado
 
-Este comportamento indica falha na validação do formulário.
+---
 
-## Tecnologias utilizadas
+## 📊 Impacto
 
-- Java
+- experiência do usuário prejudicada
+- comportamento inconsistente
+- possível aumento de erros percebidos pelo usuário
+
+---
+
+## 🧪 Cenários automatizados
+
+- ✅ Login com sucesso
+- ⚠️ Tratativa para bug de duplo clique
+- (em evolução)
+  - ❌ Login inválido
+  - ❌ Campos obrigatórios
+  - ❌ Senha incorreta
+
+---
+
+## 🧰 Tecnologias utilizadas
+
+- Java 17
 - Selenium WebDriver
 - JUnit 5
 - Maven
-- Page Object Model
+- Page Object Model (POM)
 
-## Estrutura do projeto
-
-base
-pages
-tests
-
-## Como executar o projeto
-
-mvn test
-
-## Autor
-
-Alefe Silva
+Álefe Silva
